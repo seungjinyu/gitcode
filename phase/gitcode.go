@@ -16,7 +16,7 @@ func Gitcode(args []string) {
 		fmt.Println("No arguments")
 	}
 
-	fp, err := os.Open("./.git/config")
+	fp, err := os.Open(os.Getenv("GITPATH"))
 	if err != nil {
 		fmt.Println(err)
 	}
