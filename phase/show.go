@@ -16,7 +16,8 @@ func Show(args []string) {
 		fmt.Println("No arguments")
 	}
 
-	fp, err := os.Open(os.Getenv("GITPATH"))
+	fp, err := os.Open("./.git/config")
+
 	if err != nil {
 		fmt.Println("[ERROR] failed to open .git file move to the directory where .git is located : ) ")
 		return
