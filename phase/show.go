@@ -27,7 +27,8 @@ func Show(args []string) {
 	res, err := findString(fp, "url")
 
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("There is no url in the .git config file I suggest you to check the file whether it is not manually fixed")
+		return
 	}
 
 	giturl := splitString(res)
