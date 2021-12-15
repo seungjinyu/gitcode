@@ -22,15 +22,6 @@ func Gitcode(args []string) {
 	}
 	defer fp.Close()
 
-	// buffer := make([]byte, 10)
-
-	// r := bufio.NewReader(fp)
-	// b, err := r.Peek(1000)
-	// if err != nil {
-	// 	fmt.Println(err)
-	// }
-	// fmt.Printf("5 bytes: %s\n", string(b))
-
 	// Splits on newlines by default.
 	res, err := findString(fp, "url")
 
@@ -42,7 +33,6 @@ func Gitcode(args []string) {
 	fmt.Println(giturl)
 
 	openBrowser(giturl)
-
 }
 func openBrowser(url string) {
 	var err error
@@ -58,12 +48,10 @@ func openBrowser(url string) {
 	}
 
 }
-
 func splitString(res string) string {
 	slice := strings.Split(res, " ")
 	return slice[2]
 }
-
 func findString(fp *os.File, str string) (string, error) {
 	scanner := bufio.NewScanner(fp)
 
