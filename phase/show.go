@@ -18,7 +18,8 @@ func Show(args []string) {
 
 	fp, err := os.Open(os.Getenv("GITPATH"))
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("failed to open .git file move to the directory where .git is located : ) ")
+		// fmt.Println(err)
 	}
 	defer fp.Close()
 
