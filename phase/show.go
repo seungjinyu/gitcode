@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-func Gitcode(args []string) {
+func Show(args []string) {
 
 	if len(args) == 0 {
 		fmt.Println("No arguments")
