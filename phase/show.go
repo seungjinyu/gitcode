@@ -10,13 +10,15 @@ import (
 	"strings"
 )
 
+var dotgitpath string = "./.git/config"
+
 func Show(args []string) {
 
 	if len(args) == 0 {
 		fmt.Println("No arguments")
 	}
 
-	fp, err := os.Open("./.git/config")
+	fp, err := os.Open(dotgitpath)
 
 	if err != nil {
 		fmt.Println("[ERROR] failed to open .git file move to the directory where .git is located : ) ")
