@@ -14,7 +14,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "gitcode",
 	Short: "gitcode is the basic cmd to use gitcode",
-	Long:  `By using gitcode you can approach to your github repositoru faster`,
+	Long:  `By using gitcode you can approach to your github repository faster`,
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
