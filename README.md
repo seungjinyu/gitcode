@@ -14,3 +14,5 @@ version is now available
 
 gitcode version 
 // this command will show you the version of the gitcode
+
+now we are going with styles~

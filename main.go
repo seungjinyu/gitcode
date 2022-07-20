@@ -13,4 +13,5 @@ import (
 func main() {
 	os.Setenv("VERSION", "1.0.0")
 	cmd.Execute()
+
 }
